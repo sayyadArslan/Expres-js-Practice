@@ -1,0 +1,56 @@
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+h1
+{
+    font-size: 35px;
+    color:dodgerblue;
+}
+.forms
+{
+    border:2px solid dodgerblue;
+    border-radius: 20px;
+    width:500px;
+    height:400px;
+   position: absolute;
+   left:30%;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textbox
+{
+    width:400px;
+    height:40px;
+    padding-left: 8px;
+    background: transparent;
+    color:white;
+    font-size: 16px;
+    border:2px  solid dodgerblue;
+    border-radius: 20px;
+    margin: 10px;
+}
+.btn
+{
+    width: 150px;
+    height:50px;
+    border:2px solid dodgerblue;
+    border-radius: 20px;
+    color:white;
+    background: transparent;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    transform: scale(1.1);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,14 @@
+<%- include('Partials/head')%>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="host.css" />
+</head>
+<body>
+        <center><h1>Hi Add Your Home</h1></center>
+        <div class="forms">
+            <form action="/add-home" method="POST">
+            <input class="textbox" type="text" name="housname" placeholder="Enter Your Name"></input>
+            <input class="btn" type="submit"></input>
+            </form>
+        </div>
+</body>
+</html>
