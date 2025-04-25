@@ -1,0 +1,32 @@
+*
+{
+    color: white;
+}   
+
+
+body
+{
+    background-color: black;
+    color: white;
+}
+.form
+{
+
+}
+input
+{
+    width:250px;
+    height:40px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.btn
+{
+    width: 180px;
+    background-color: dodgerblue;
+    height:45px;
+    border: none;
+}
