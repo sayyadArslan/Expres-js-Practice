@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes App</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <form class="" action="/create" method="post">
+        <input class="tbox" type="text" placeholder="Title" name="title"/>
+        <textarea class="tbox" name="task" placeholder="Enter task" ></textarea>
+        <input class="btn" type="submit" value="Add Task">
+    </form>
+    <h1>All task</h1>
+    <div class="tasks">
+        <% if(files.length>0) { %>
+            <% files.forEach((val)=>{ %>
+                <div class="alltask">
+                    <h2><%= val %></h2>
+                    <div class="anc">
+                    <a href="/file/<%= val %>">Read More..</a>
+                    <a href="/edit/<%= val %>">Edit</a>
+                    </div>
+                </div>
+                <% }) %>
+            <% } else { %>   
+                <h3>No task Yet</h3>
+           <% }%>
+    </div> 
+        
+</body>
+</html>
