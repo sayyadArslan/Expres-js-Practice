@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit | User</title>
+</head>
+<body>
+    <h1>Update User</h1>
+    <form action="/edit/<%= user._id %>" method="post">
+        <input type="text" value="<%= user.Username %>" name="Username" placeholder="Username"/>
+        <input type="text" value="<%= user.Email %>" name="Email"  placeholder="Email"/>
+        <input type="text" value="<%= user.ImageUrl %>" name="ImageUrl" placeholder="Image" />
+        <input type="submit" value="Update User"/>
+    </form>
+</body>
+</html>

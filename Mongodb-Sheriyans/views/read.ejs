@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All User</title>
+    <link rel="stylesheet" type="text/css" href="reading.css"/>
+</head>
+<body>
+    <div class="head">
+
+    
+    <h1>All Users</h1>
+    <a class="bb" href="/">Back</a>
+</div>
+    <hr>
+
+    <div class="all-user">
+        <% user.forEach((user)=>{%>
+            <div class="users">
+                <div class="image"><%= user.Username %></div>
+                <h3><%= user.Email %></h3>
+                <h4><%= user.Image %></h4>
+                <div class="btns">
+                    <a class="bt1" href="/update/<%= user._id %>">Edit</a>
+                    <a class="bt2" href="/Delete/<%= user._id %>">Delete</a>
+                </div>
+                
+        <% }) %>
+    
+    </div>
+
+    </div>
+</body>
+</html>

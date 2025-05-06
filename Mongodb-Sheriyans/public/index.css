@@ -1,0 +1,49 @@
+body,html
+{
+    background-color: black;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+input
+{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid aqua;
+    background: transparent;
+    padding-left: 10px;
+    color: white;
+    font-size: 18px;
+}
+form
+{
+    margin: 50px;
+    display: flex;
+    gap: 20px;
+}
+h1
+{
+    color: aqua;
+    margin: 20px;
+}
+.head
+{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.bb
+{
+    width: 120px;
+    background-color: dodgerblue;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+}
