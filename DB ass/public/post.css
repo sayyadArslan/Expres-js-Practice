@@ -1,0 +1,40 @@
+h1
+{
+    
+    font-size: 40px;
+}
+.heading
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.form-div
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px   ;
+}
+form input
+{
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: White;
+}
+.btn
+{
+    background-color: crimson;
+    border: none;
+    width: 250px;
+    height: 40px;
+}

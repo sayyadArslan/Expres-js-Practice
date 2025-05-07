@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New post</title>
+    <link rel="stylesheet" type="text/css" href="/Dashboard.css"/>
+</head>
+<body>
+    <nav>
+        <h1>DB-Association</h1>
+        <div class="sign">
+            <img src="/<%= user.UserImage %>"/>
+            <h2><%= user.Username %>    </h2>
+        </div>
+    </nav>
+       <div class="heading">
+        <h1>Hey , <%= user.Username %> <br> Add New Post</h1>
+       </div> 
+        <div class="form-div">
+
+        <form action="/newpost/<%= user._id %>" method="POST" enctype="multipart/form-data">
+            <input type="text" placeholder="Enter Title" name="title" />
+            <input type="text" placeholder="Enter Short Bio" name="bio" />
+            <label>Upload Post Image</label>
+            <input type="file" name="file" value="Choose image"/>
+            <input class="btn" type="submit" value="Publish Post"/>
+        </form>
+    </div>
+</body>
+</html>

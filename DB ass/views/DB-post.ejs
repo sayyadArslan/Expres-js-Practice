@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Dashboard.css"/>
+</head>
+<body>
+    <nav>
+        <h1>DB-Home</h1>
+        <div class="sign">
+            
+            <img src="<%= user.UserImage %>"/>
+            <a href="/dashboard/<%= user._id %> "><%= user.Username %></a>
+        </div>
+    </nav>
+    <div>
+        <div class="posts">
+            <% post.forEach((po)=>{ %>
+                <div class="post">
+                    <img class="post-image" src="/<%= po.PostImage %>"/>
+                    <h2><%= po.Title %></h2>
+                    <h3><%= po.Bio %></h3>
+                    <div class="user">
+                        <img src="/<%= user.UserImage %>"/>
+                        <h4><%= user.Username %></h4>
+                    </div>
+                </div> 
+                <% }) %>
+           
+        </div>
+    </div>
+</body>
+</html>
