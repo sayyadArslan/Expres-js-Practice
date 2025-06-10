@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Detail</title>
+    <link rel="stylesheet" href="/Detail.css">
+    <link rel="stylesheet" href="/Home.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Bloggify</h1>
+            </div>
+            <section>
+                <form class="fo" action="">
+                    <input type="text" name="" placeholder="Search Blog">
+                    <input type="submit" value="Search" class="btn">
+                </form>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <div class="blog-detail">
+            <div class="blog-image">
+                <img src="/<%= blog.ImageName %>" alt="">
+            </div>
+            <div class="Detail">
+                <h1><%= blog.Title %></h1>
+                <p><%= blog.Description %></p>
+            </div>
+        </div>
+    </main>
+    <section>
+        <form action="" id="forms">
+            <input id="text" type="text"  placeholder="Drop Comment" name="">
+            <input type="submit" class="btn" name="" id="" value="Add Comment">
+        </form>
+    </section>
+    <section>
+        <h1>All Comments</h1>
+    </section>
+</body>
+</html>

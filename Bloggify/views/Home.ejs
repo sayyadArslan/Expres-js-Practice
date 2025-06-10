@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloggify-Home</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Bloggify</h1>
+            </div>
+            <section>
+                <form class="fo" action="">
+                    <input type="text" name="" placeholder="Search Blog">
+                    <input type="submit" value="Search" class="btn">
+                </form>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <% blog.forEach((us)=>{ %>
+            <div class="blog">
+                <img src="/<%= us.ImageName %>" alt="">
+                <h1>
+                    <%= us.Title %>
+                </h1>
+                <div>
+                    <h2>Date</h2>
+                    <a href="/detail/<%= us._id %>">Read</a>
+                </div>
+            </div>
+            <% }) %>
+
+    </main>
+</body>
+
+</html>
