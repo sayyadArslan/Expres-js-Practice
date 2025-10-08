@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Sender</title>
+    <style>
+        body {
+  background:black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      class="w-full item max-w-lg p-8 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl text-white relative overflow-hidden"
+    >
+      <!-- Glow Circles -->
+      <div
+        class="absolute top-0 right-0 w-40 h-40 bg-indigo-500/30 rounded-full blur-3xl -z-10"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-40 h-40 bg-pink-500/30 rounded-full blur-3xl -z-10"
+      ></div>
+
+      <h1 class="text-3xl font-bold text-center mb-6">
+        Send Email with Nodemailer 📧
+      </h1>
+
+      <form action="/submit " method="POST" class="flex flex-col space-y-4">
+        <div>
+          <label class="block text-sm mb-2 text-gray-200">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="John Doe"
+            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm mb-2 text-gray-200">Your Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="example@mail.com"
+            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm mb-2 text-gray-200">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Enter subject"
+            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm mb-2 text-gray-200">Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Write your message..."
+            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            required
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full py-3 mt-3 bg-indigo-500 hover:bg-indigo-600 rounded-lg font-semibold shadow-md transition"
+        >
+          Send Email
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
